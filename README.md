@@ -1,21 +1,30 @@
-# wherewego
+# Vue去哪网
 
-> A Vue.js project
+# 初始化
 
-## Build Setup
+css:
 
-``` bash
-# install dependencies
-npm install
+reset.css
 
-# serve with hot reload at localhost:8080
-npm run dev
+js:
 
-# build for production with minification
-npm run build
+npm i fastclick --save
 
-# build for production and view the bundle analyzer report
-npm run build --report
+main .js
+
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+//js
+import FastClick from 'fastclick'
+
+FastClick.attach(document.body);
+//css
+import './assets/reset.css'
+```
+
+
+
+stylus 
+
+`npm i stylus stylus-loader --save`
+

@@ -113,6 +113,7 @@
 
 <style scoped>
   .icons {
+    padding-top: .1rem;
     width: 100%;
     overflow: hidden;
   }

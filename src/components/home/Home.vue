@@ -2,19 +2,21 @@
   <div >
     <HomeHeader></HomeHeader>
     <HomeSwiper></HomeSwiper>
-    123
+    <Icons></Icons>
   </div>
 </template>
 
 <script>
   import HomeHeader from './pages/Header'
   import HomeSwiper from './pages/Swiper'
+  import Icons from './pages/Icons'
 
   export default {
     name: "Home",
     components: {
       HomeHeader,
-      HomeSwiper
+      HomeSwiper,
+      Icons
     }
   }
 </script>

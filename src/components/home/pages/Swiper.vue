@@ -1,52 +1,9 @@
-# Vue去哪网
-
-# 初始化
-
-css:
-
-reset.css
-
-js:
-
-npm i fastclick --save
-
-main .js
-
-```
-
-//js
-import FastClick from 'fastclick'
-
-FastClick.attach(document.body);
-//css
-import './assets/reset.css'
-```
-
-
-
-stylus 
-
-`npm i stylus stylus-loader --save`
-
-## swiper
-
-`npm install vue-awesome-swiper --save`
-
-### 组件引入
-```javascript 
-  import 'swiper/dist/css/swiper.css'////这里注意具体看使用的版本是否需要引入样式，以及具体位置。
-  import {swiper, swiperSlide} from 'vue-awesome-swiper'
-```
-
-### 使用
-
-```vue
 <template>
   <div class="header-swiper">
     <swiper :options="swiperOption">
       <!-- slides -->
-      <swiper-slide v-for="item in swiperList" :key="swi.id">
-        <img :src="item.url" alt="加载失败">
+      <swiper-slide v-for="swi in swiperList" :key="swi.id">
+        <img :src="swi.url" alt="加载失败">
       </swiper-slide>
       <!-- Optional controls -->
       <div class="swiper-pagination" slot="pagination"></div>
@@ -114,5 +71,3 @@ stylus
   }
 
 </style>
-
-```

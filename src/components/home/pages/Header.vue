@@ -8,12 +8,13 @@
       <i class=" icon iconfont icon-icon-test"></i>
       输入城市/景点/游玩主题
     </div>
+    <router-link to="/city">
+      <div class="header-right">
+        {{this.city}}
+        <i class=" icon iconfont icon-icon-test4"></i>
+      </div>
+    </router-link>
 
-    <div class="header-right">
-      {{this.city}}
-      <i class=" icon iconfont icon-icon-test4"></i>
-
-    </div>
 
   </div>
 </template>
@@ -60,5 +61,6 @@
   .header-right {
     font-size: .28rem;
     padding: 0 .2rem;
+    color: white;
   }
 </style>

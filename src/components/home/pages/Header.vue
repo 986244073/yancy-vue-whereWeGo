@@ -10,7 +10,7 @@
     </div>
 
     <div class="header-right">
-      北京
+      {{this.city}}
       <i class=" icon iconfont icon-icon-test4"></i>
 
     </div>
@@ -20,7 +20,10 @@
 
 <script>
   export default {
-    name: "Header"
+    name: "Header",
+    props: {
+      city: String
+    }
   }
 </script>
 

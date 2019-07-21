@@ -5,7 +5,7 @@
       周末去哪儿
     </div>
     <ul>
-      <li class="item border-bottom" v-for="item in recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item in list" :key="item.id">
         <div class="item-img-wrapper">
           <img :src="item.imgUrl" alt="图片" class="item-img">
         </div>
@@ -23,31 +23,37 @@
 <script>
   export default {
     name: "Weekend",
+    props: {
+      list: {
+        type: Array,
+        default: 0
+      },
+    },
     data() {
       return {
-        recommendList: [{
-          id: '0001',
-          imgUrl: 'https://imgs.qunarzz.com/sight/source/1505/a2/78e4dbcfd45a6d.jpg_r_640x214_7a62b06a.jpg',
-          title: '成都必打卡',
-          desc: '成都的标志，也是现代人对老成都的记忆'
-        }, {
-          id: '0002',
-          imgUrl: 'https://imgs.qunarzz.com/sight/source/1505/a2/78e4dbcfd45a6d.jpg_r_640x214_7a62b06a.jpg',
-          title: '成都必打卡',
-          desc: '成都的标志，也是现代人对老成都的记忆'
-        }, {
-          id: '0003',
-          imgUrl: 'https://imgs.qunarzz.com/sight/source/1505/a2/78e4dbcfd45a6d.jpg_r_640x214_7a62b06a.jpg',
-          title: '成都必打卡',
-          desc: '成都的标志，也是现代人对老成都的记忆'
-        }, {
-          id: '0004',
-          imgUrl: 'https://imgs.qunarzz.com/sight/source/1505/a2/78e4dbcfd45a6d.jpg_r_640x214_7a62b06a.jpg',
-          title: '成都必打卡',
-          desc: '成都的标志，也是现代人对老成都的记忆'
-        },
-
-        ]
+        // recommendList: [{
+        //   id: '0001',
+        //   imgUrl: 'https://imgs.qunarzz.com/sight/source/1505/a2/78e4dbcfd45a6d.jpg_r_640x214_7a62b06a.jpg',
+        //   title: '成都必打卡',
+        //   desc: '成都的标志，也是现代人对老成都的记忆'
+        // }, {
+        //   id: '0002',
+        //   imgUrl: 'https://imgs.qunarzz.com/sight/source/1505/a2/78e4dbcfd45a6d.jpg_r_640x214_7a62b06a.jpg',
+        //   title: '成都必打卡',
+        //   desc: '成都的标志，也是现代人对老成都的记忆'
+        // }, {
+        //   id: '0003',
+        //   imgUrl: 'https://imgs.qunarzz.com/sight/source/1505/a2/78e4dbcfd45a6d.jpg_r_640x214_7a62b06a.jpg',
+        //   title: '成都必打卡',
+        //   desc: '成都的标志，也是现代人对老成都的记忆'
+        // }, {
+        //   id: '0004',
+        //   imgUrl: 'https://imgs.qunarzz.com/sight/source/1505/a2/78e4dbcfd45a6d.jpg_r_640x214_7a62b06a.jpg',
+        //   title: '成都必打卡',
+        //   desc: '成都的标志，也是现代人对老成都的记忆'
+        // },
+        //
+        // ]
       }
     },
   }

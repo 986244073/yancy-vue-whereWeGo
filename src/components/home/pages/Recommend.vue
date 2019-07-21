@@ -5,7 +5,7 @@
       热销推荐
     </div>
     <ul>
-      <li class="item border-bottom" v-for="item in recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item in list" :key="item.id">
         <div class="item-img-wrapper">
           <img :src="item.imgUrl" alt="图片" class="item-img">
         </div>
@@ -24,31 +24,34 @@
 <script>
   export default {
     name: "Recommend",
+    props: {
+      list: Array
+    },
     data() {
       return {
-        recommendList: [{
-          id: '0001',
-          imgUrl: 'https://imgs.qunarzz.com/sight/p0/1612/1d/1d9a740c1f9e0efaa3.img.jpg_200x200_63285bd9.jpg',
-          title: '成都海昌极地海洋公园',
-          desc: '莫的啥子好看的'
-        },{
-          id: '0001',
-          imgUrl: 'https://imgs.qunarzz.com/sight/p0/1612/1d/1d9a740c1f9e0efaa3.img.jpg_200x200_63285bd9.jpg',
-          title: '成都海昌极地海洋公园',
-          desc: '莫的啥子好看的'
-        },{
-          id: '0001',
-          imgUrl: 'https://imgs.qunarzz.com/sight/p0/1612/1d/1d9a740c1f9e0efaa3.img.jpg_200x200_63285bd9.jpg',
-          title: '成都海昌极地海洋公园',
-          desc: '莫的啥子好看的'
-        }, {
-          id: '0001',
-          imgUrl: 'https://imgs.qunarzz.com/sight/p0/1612/1d/1d9a740c1f9e0efaa3.img.jpg_200x200_63285bd9.jpg',
-          title: '成都海昌极地海洋公园',
-          desc: '莫的啥子好看的'
-        },
-
-        ]
+        // recommendList: [{
+        //   id: '0001',
+        //   imgUrl: 'https://imgs.qunarzz.com/sight/p0/1612/1d/1d9a740c1f9e0efaa3.img.jpg_200x200_63285bd9.jpg',
+        //   title: '成都海昌极地海洋公园',
+        //   desc: '莫的啥子好看的'
+        // }, {
+        //   id: '0002',
+        //   imgUrl: 'https://imgs.qunarzz.com/sight/p0/1612/1d/1d9a740c1f9e0efaa3.img.jpg_200x200_63285bd9.jpg',
+        //   title: '成都海昌极地海洋公园',
+        //   desc: '莫的啥子好看的'
+        // }, {
+        //   id: '0003',
+        //   imgUrl: 'https://imgs.qunarzz.com/sight/p0/1612/1d/1d9a740c1f9e0efaa3.img.jpg_200x200_63285bd9.jpg',
+        //   title: '成都海昌极地海洋公园',
+        //   desc: '莫的啥子好看的'
+        // }, {
+        //   id: '0004',
+        //   imgUrl: 'https://imgs.qunarzz.com/sight/p0/1612/1d/1d9a740c1f9e0efaa3.img.jpg_200x200_63285bd9.jpg',
+        //   title: '成都海昌极地海洋公园',
+        //   desc: '莫的啥子好看的'
+        // },
+        //
+        // ]
       }
     },
   }

@@ -31,7 +31,6 @@
           console.log(error);
           alert('网络错误')
         })
-
     },
     data() {
       return {

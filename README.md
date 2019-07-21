@@ -118,7 +118,8 @@ stylus
 ```
 
 ## Git
-
+`git pull`
+`git checkout`
 `git branch`
 `git merge`
 
@@ -151,4 +152,23 @@ header
     }
   }
 </script>
+```
+
+## axios访问 网络
+
+```vue
+  import axios from 'axios'
+
+-------------------------------------
+    created(){
+      axios.get('https://www.easy-mock.com/mock/5d331f2f70b5c8763d05c93d/WhereWeGo/json')
+        .then(response => {
+          this.iconsList = response.data.iconsList;
+          console.log(this.iconsList);
+        }).catch(error => {
+          console.log(error);
+          alert('网络错误')
+        })
+    },
+
 ```

@@ -26,15 +26,20 @@
 
       <div
         class="area"
-        v-for="(item,key) of cities"
+        v-for="(item, key) of cities"
         :key="key"
-        :ref="key">
+        :ref="key"
+      >
+
         <div class="title border-topbottom">{{key}}</div>
         <div class="item-list">
-          <div class="item border-bottom"
-               v-for="innerItem of item"
-               :key="innerItem.id"
-          >{{innerItem.name}}
+          <div
+            class="item border-bottom"
+            v-for="innerItem of item"
+            :key="innerItem.id"
+            @click="handleCityClick(innerItem.name)"
+          >
+            {{innerItem.name}}
           </div>
         </div>
       </div>
@@ -56,18 +61,14 @@
     watch: {
       letter() {
         if (this.letter) {
-          let element = this.$refs[this.letter][0];
-          console.log("ele"+element)
-          // this.scroll.srollToElement(element);
+          const element = this.$refs[this.letter][0];
+          this.scroll.scrollToElement(element)
         }
-        console.log("letter" + this.letter);
       }
     },
     mounted() {
-      this.scroll = new Bscroll(this.$refs.wrapper);
-    }, created() {
-      console.log(this.cities);
-    }
+      this.scroll = new Bscroll(this.$refs.wrapper)
+    },
   }
 </script>
 

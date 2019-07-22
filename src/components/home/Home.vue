@@ -45,7 +45,7 @@
           this.swiperList=res.data.swiperList;
           this.iconsList=res.data.iconsList;
           this.recommendList=res.data.recommendList;
-          this.weekendList=res.data.recommendList;
+          this.weekendList=res.data.weekendList;
         }
       }
     },

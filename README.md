@@ -24,9 +24,16 @@ import './assets/reset.css'
 
 
 
-stylus 
+## stylus 
 
 `npm i stylus stylus-loader --save`
+```vue
+# 使用
+<style scoped lang="stylus">
+@import "~@/assets/var.styl"
+</style>
+
+```
 
 ## swiper
 

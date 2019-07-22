@@ -13,14 +13,15 @@
   }
 </script>
 
-<style scoped>
-  .search {
+<style scoped lang="stylus">
+  @import "~@/assets/var.styl"
+
+  .search
     height: .86rem;
     padding: .1rem;
     background: #00bcd4;
-  }
 
-  .search-input {
+  .search-input
     box-sizing: border-box;
     height: .82rem;
     width: 100%;
@@ -28,5 +29,5 @@
     text-align: center;
     border-radius: .06rem;
     color: #666;
-  }
+
 </style>
